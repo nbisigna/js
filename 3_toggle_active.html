@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toggle Active</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+    }
+    ul {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      text-align: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      cursor: pointer;
+      height: 200px;
+      background-color: lightgrey;
+    }
+    li:hover {
+      background-color: black;
+      height: 100%;
+    }
+    .active {
+      background-color: darkgrey;
+    }
+  </style>
+  <body>
+    <ul>
+      <li class="link"></li>
+      <li class="link"></li>
+      <li class="link"></li>
+      <li class="link"></li>
+    </ul>
+    <script src="./3_toggle_active.js"></script>
+  </body>
+</html>
