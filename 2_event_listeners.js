@@ -16,4 +16,3 @@ function randomColor(e) {
     btn.addEventListener('click', randomColor);
   }, 1000);
 }
-cc;

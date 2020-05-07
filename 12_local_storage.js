@@ -1,3 +1,12 @@
+var target = document.getElementById('target');
+
+var log = localStorage.getItem('log');
+if (log) {
+  target.textContent = log;
+} else {
+  log = localStorage.setItem('log', '');
+}
+
 document.addEventListener('keypress', onKeyPress);
 
 var keys = '';
@@ -13,8 +22,6 @@ function onKeyPress(e) {
   }
 }
 
-var target = document.getElementById('target');
-
 setInterval(function () {
   if (keys.length > 0) {
     localStorage.setItem('log', localStorage.getItem('log') + keys);
@@ -22,13 +29,6 @@ setInterval(function () {
     keys = '';
   }
 }, 1000);
-
-var log = localStorage.getItem('log');
-if (!log) {
-  log = localStorage.setItem('log', '');
-} else {
-  target.textContent = log;
-}
 
 var i = 0;
 

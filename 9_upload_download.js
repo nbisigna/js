@@ -24,7 +24,7 @@ function upload(e) {
     img.src = URL.createObjectURL(image);
     img.onload = function () {
       var ratio = img.height / img.width;
-      if (ratio > 0.66) {
+      if (ratio > 0.75) {
         h = 200;
         y = 100;
         w = ratio * h;
